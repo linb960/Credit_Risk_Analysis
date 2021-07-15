@@ -36,9 +36,9 @@ Imbalanced Classification Report
   high_risk       0.01      0.72      0.59      0.02      0.65      0.43       101
    low_risk       1.00      0.59      0.72      0.74      0.65      0.42     17104
 ```
-The balanced accuracy score is 65%.
-The high_risk precision is 1% and 72% sensitivity. F1 of 2%.
-Low_risk precision is 100% with a sensitivity of 59% and F1 of 74%. This is due to the high numbers in the low risk population. 
+The balanced accuracy score is 65%.<br>
+The high_risk precision is 1% and 72% sensitivity. F1 of 2%.<br>
+Low_risk precision is 100% with a sensitivity of 59% and F1 of 74%. This is due to the high numbers in the low risk population. <br>
 
 <br> The **SMOTE algorithms** results are:
 ```
@@ -58,9 +58,9 @@ Imbalanced Classification Report
 
 avg / total       0.99      0.69      0.63      0.81      0.66      0.44     17205
 ```
-The balanced accuracy score stays close at 66%.
-The high_risk precision again is 1% but sensitivity drops down to 63%. F1 is still 2%.
-Low_risk precision is 100% with a sensitivity now of 69% and F1 of 63%.  
+The balanced accuracy score stays close at 66%.<br>
+The high_risk precision again is 1% but sensitivity drops down to 63%. F1 is still 2%.<br>
+Low_risk precision is 100% with a sensitivity now of 69% and F1 of 63%.  <br>
 
 ### Undersampled
 **ClusterCentroids algorithm**
@@ -81,9 +81,9 @@ Imbalanced Classification Report
 
 avg / total       0.99      0.40      0.69      0.56      0.52      0.27     17205
 ```
-The balanced accuracy score drops to 54%.
-The high_risk precision is 1% sensitivity at 69%. F1 is 1%.
-Low_risk precision is 100% with a sensitivity now of 40% and F1 of 57%.  
+The balanced accuracy score drops to 54%.<br>
+The high_risk precision is 1% sensitivity at 69%. F1 is 1%.<br>
+Low_risk precision is 100% with a sensitivity now of 40% and F1 of 57%.  <br>
 Undersampled seems to be less accurate than SMOTE or Oversampled
 
 ### Combinatorial approach
@@ -106,9 +106,9 @@ Imbalanced Classification Report
 
 avg / total       0.99      0.57      0.72      0.72      0.64      0.41     17205
 ```
-The balanced accuracy score drops to 54%.
-The high_risk precision is 1% sensitivity at 72%. F1 is 2%.
-Low_risk precision is 100% with a sensitivity of 57%% and F1 of 73%.  
+The balanced accuracy score drops to 54%.<br>
+The high_risk precision is 1% sensitivity at 72%. F1 is 2%.<br>
+Low_risk precision is 100% with a sensitivity of 57%% and F1 of 73%. <br> 
 No real difference with SMOTEENN and the other models <br>
 
 ### Reduced bias models
@@ -130,9 +130,9 @@ Imbalanced Classification Report
 
 avg / total       0.99      0.88      0.66      0.93      0.76      0.60     17205
 ```
-The balanced accuracy score is 77%.
-The high_risk precision is 3% sensitivity at 66%. F1 is 6%.
-Low_risk precision is 100% with a sensitivity of 88%% and F1 of 94%.  
+The balanced accuracy score is 77%.<br>
+The high_risk precision is 3% sensitivity at 66%. F1 is 6%.<br>
+Low_risk precision is 100% with a sensitivity of 88%% and F1 of 94%.  <br>
 Balanced Random Forest Classifier does significantly better than the previous four models.
 
 ***Easy Ensemble Classifier***
@@ -154,11 +154,11 @@ Imbalanced Classification Report
 
 avg / total       0.99      0.94      0.92      0.97      0.93      0.87     17205
 ```
-The balanced accuracy score is the highest so far at 93%.
-The high_risk precision is 9% sensitivity at 92%. F1 is 16%.
-Low_risk precision is 100% with a sensitivity of 94%% and F1 of 97%.  
-Easy Ensemble Classifier exceeds all of the other models performance.
+The balanced accuracy score is the highest so far at 93%.<br>
+The high_risk precision is 9% sensitivity at 92%. F1 is 16%.<br>
+Low_risk precision is 100% with a sensitivity of 94%% and F1 of 97%.  <br>
+Easy Ensemble Classifier exceeds all of the other models performance.<br>
 
-##Summary
+## Summary
 When we oversample or undersample or combine over and under sampling our results are not very accurate as can be seen in the accuracy scores of 54 to 66%.  But using ensemble learning with the Balanced Random Forest and Easy Ensemble Classifier models we see that the idea of combining weak learners together can provide more accurate predictions. <br>
-Therefore I would recommend that for analyzing credit risk companies would want to consider Ensemble Learning models.
+<br>Therefore I would recommend that for analyzing credit risk companies would want to consider Ensemble Learning models.
